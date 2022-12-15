@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo--crud/static/css/main.2f676e7e.css",
+    "main.js": "/todo--crud/static/js/main.36a21d1c.js",
+    "static/js/787.b8fa26a9.chunk.js": "/todo--crud/static/js/787.b8fa26a9.chunk.js",
+    "static/media/main__img.png": "/todo--crud/static/media/main__img.5457e1f6f4e391e4d525.png",
+    "index.html": "/todo--crud/index.html",
+    "main.2f676e7e.css.map": "/todo--crud/static/css/main.2f676e7e.css.map",
+    "main.36a21d1c.js.map": "/todo--crud/static/js/main.36a21d1c.js.map",
+    "787.b8fa26a9.chunk.js.map": "/todo--crud/static/js/787.b8fa26a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f676e7e.css",
+    "static/js/main.36a21d1c.js"
+  ]
+}
