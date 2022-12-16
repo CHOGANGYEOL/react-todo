@@ -28,7 +28,7 @@ a {
 }
 .App {
     width:100%;
-    max-width:390px;
+    max-width:50rem;
     margin:0 auto;
     overflow-x:hidden;
 }

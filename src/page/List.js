@@ -5,7 +5,7 @@ import { getToday, getTomorrow } from '../util/getDay'
 
 
 const ListMainWrap = styled.div`
-padding: 13rem 0 0;
+padding: 11rem 0 0;
 background-color:var(--background-color);
 `
 

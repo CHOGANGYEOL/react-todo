@@ -1,8 +1,8 @@
 const Input = ({ label, value}) => {
     return (
         <div className="input">
-            <label>{label}</label>
-            <input {...value} type="text" />
+            <label htmlFor={label}>{label}</label>
+            <input id={label} {...value} type="text" />
         </div>
     )
 }

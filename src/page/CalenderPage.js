@@ -8,7 +8,7 @@ import moment from 'moment';
 import CreateTodo from '../component/CreateTodo';
 
 const CalendarPageWrap = styled.div`
-    padding: 13rem 0 0;
+    padding: 11rem 0 0;
     background-color: var(--background-color);
 `
 const CalendarWrap = styled.div`
@@ -17,16 +17,18 @@ padding:3rem 2rem 0;
 const CalenderPage = () => {
     const [value, onChange] = useState(new Date());
     const [isDate, setIsDate] = useState('');
+
     useEffect(() => {
         const date = value;
+        const year = date.getFullYear()
         const month = ("0" + (1 + date.getMonth())).slice(-2);
-        const day = ("0" + date.getDate()).slice(-2);
+        const day = ("0" + (date.getDate())).slice(-2);
 
-        setIsDate(`${month}월 ${day}일`);
+        setIsDate(`${year}-${month}-${day}`);
     }, [value])
     return (
         <CalendarPageWrap>
-            <Nav headWrite='Creator' headerColor="true" />
+            <Nav headWrite='Calendar' headerColor="true" />
             <CalendarWrap>
                 <Calendar 
                 onChange={onChange}
@@ -34,7 +36,7 @@ const CalenderPage = () => {
                 value={value} 
                 locale="en-EN"/>
             </CalendarWrap>
-            <TodoWrap write={isDate} date={isDate} />
+            <TodoWrap write={`${isDate.slice(5, 7)}월 ${isDate.slice(8)}일`} date={isDate} />
             <CreateTodo />
         </CalendarPageWrap>
     )

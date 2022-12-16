@@ -13,9 +13,9 @@ const Header = styled.header`
     z-index: 2;
     top:0;
     width: 100%;
-    max-width: 39rem;
-    height: 13rem;
-    padding:5rem 2rem 1rem;
+    max-width: 50rem;
+    height: 11rem;
+    padding:3rem 2rem 1rem;
     background-color: ${props => props.color ? `var(--main-color)` : ``};
     display:flex;
     flex-direction:row;
