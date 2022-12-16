@@ -1,3 +1,13 @@
+/* Calendar Css */
+.react-calendar, .react-calendar *, .react-calendar *:before, .react-calendar *:after {
+  box-sizing:border-box;
+}
+.react-calendar {
+  width:100%;
+  background-color:#fff;
+  border-radius:10px;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
+}
 /* Swiper Css */
 .swiper-wrap .swiper-slide {
   word-break: keep-all;

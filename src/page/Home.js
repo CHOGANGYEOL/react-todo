@@ -15,6 +15,7 @@ const TopSection = styled.div`
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
     >img {
         max-width: fit-content;
+        max-height: fit-content;
     }
 `
 const Home = () => {
