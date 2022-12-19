@@ -11,6 +11,30 @@ const CreateWrap = styled.div`
         font-weight: 800;
     }
   }
+  >.bottom--wrap {
+    margin:13rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 2rem;
+    >li {
+      text-align: right;
+      margin: 0 0 3rem;
+      >span {
+        color: var(--sub-background-color);
+        margin: 0 0 .5rem 0;
+        font-size: 1.8rem;
+      }
+      >p {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+    >li:last-child {
+      margin: 0;
+    }
+  }
 `;
 const Creator = () => {
   return (
@@ -21,7 +45,7 @@ const Creator = () => {
           <img alt="" src={MainImg} />
           <h3>CHOGANGYEOL</h3>
         </div>
-        <ul>
+        <ul className="bottom--wrap">
           <li>
             <span>github</span>
             <p>CHOGANGYEOL</p>

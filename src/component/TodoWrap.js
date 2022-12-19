@@ -38,7 +38,7 @@ const TodoWrap = ({ write, date }) => {
         } else {
             setIsDate(state.filter(state => state.day === date))
         }
-    }, [date, state])
+    }, [date, state, today, tomorrow])
 
     return (
         <Wrap>
